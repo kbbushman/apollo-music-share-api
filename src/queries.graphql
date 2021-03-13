@@ -1,0 +1,54 @@
+# =====================================================================================
+# 
+#  Queries for GraphQL Playground
+# 
+# =====================================================================================
+
+# -------------------------------------------- ADD SONG MUTATION
+mutation addSong($title:String!, $artist:String!, $thumbnail:String!, $url:String!, $duration:Float!) {
+  addSong(title:$title, artist:$artist, thumbnail:$thumbnail, url:$url, duration:$duration) {
+    id
+    title
+    artist
+    thumbnail
+    url
+    duration
+    created_at
+  }
+}
+
+# QUERY VARIABLES
+{
+  "title":"Song One",
+  "artist":"Artist One",
+  "thumbnail":"http://example.com",
+  "url":"http://example.com",
+  "duration":255
+}
+
+
+# -------------------------------------------- ADD SONG MUTATION WITH SONGINPUT
+
+mutation addSong($songInput: SongInput) {
+  addSong(songInput:$songInput) {
+    id
+    title
+    artist
+    thumbnail
+    url
+    duration
+    created_at
+  }
+}
+
+
+# QUERY VARIABLES
+{
+  "songInput": {
+    "title": "Song Ten",
+    "artist": "Artist Ten",
+    "thumbnail": "http://example.com",
+    "url": "http://example.com",
+    "duration": 255
+  }
+}
