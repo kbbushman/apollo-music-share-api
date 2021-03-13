@@ -2,8 +2,7 @@
 
 ### Technologies Used:
 
-- Node
-- Express
+- Apollo Server
 - GraphQL
-- MongoDB
-- Mongoose
+- Prisma
+- PostgreSQL
