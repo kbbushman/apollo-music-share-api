@@ -21,7 +21,7 @@ model Song {
   artist      String
   thumbnail   String
   url         String
-  duration    String
+  duration    Int
   created_at  DateTime @default(now())
   updated_at  DateTime @updatedAt
 }
