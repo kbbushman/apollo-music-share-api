@@ -21,8 +21,8 @@ const TEMP_SONGS = [
   }
 ];
 
-function getSongs() {
-  return TEMP_SONGS;
+function getSongs(parent, args, context, info) {
+  return context.prisma.song.findMany();
 }
 
 module.exports = {
