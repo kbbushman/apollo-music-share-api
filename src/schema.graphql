@@ -1,0 +1,14 @@
+type Query {
+  getSongs: [Song!]!
+}
+
+type Song {
+  id: ID!
+  title: String!
+  artist: String!
+  thumbnail: String!
+  url: String!
+  duration: Int!
+  created_at: String!
+  updated_at: String!
+}
