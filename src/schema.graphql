@@ -3,7 +3,7 @@ type Query {
 }
 
 type Mutation {
-  addSong: Song!
+  addSong(title: String!, artist: String, thumbnail: String!, url: String!, duration: Float!): Song!
 }
 
 type Song {
@@ -12,7 +12,7 @@ type Song {
   artist: String!
   thumbnail: String!
   url: String!
-  duration: Int!
+  duration: Float!
   created_at: String!
   updated_at: String!
 }
