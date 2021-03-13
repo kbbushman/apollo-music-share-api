@@ -9,7 +9,7 @@ async function addSong(parent, args, context, info) {
     }
   });
 
-  return newLink;
+  return newSong;
 }
 
 module.exports = {
