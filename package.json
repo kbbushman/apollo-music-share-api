@@ -1,5 +1,5 @@
 {
-  "name": "apollo-music-api",
+  "name": "apollo-music-share-api",
   "version": "1.0.0",
   "description": "Graphql API for music sharing social app",
   "main": "index.js",
@@ -18,6 +18,16 @@
     "graphql": "^15.5.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
-  }
+    "nodemon": "^2.0.7",
+    "prisma": "^2.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbbushman/apollo-music-share-api.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/kbbushman/apollo-music-share-api/issues"
+  },
+  "homepage": "https://github.com/kbbushman/apollo-music-share-api#readme"
 }
