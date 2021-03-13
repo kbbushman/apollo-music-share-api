@@ -2,6 +2,10 @@ type Query {
   getSongs: [Song!]!
 }
 
+type Mutation {
+  addSong: Song!
+}
+
 type Song {
   id: ID!
   title: String!
