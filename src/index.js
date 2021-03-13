@@ -3,9 +3,11 @@ const path = require('path');
 const { ApolloServer } = require('apollo-server');
 const { PrismaClient } = require('@prisma/client');
 const Query = require('./resolvers/Query');
+const Mutation = require('./resolvers/Mutation');
 
 const resolvers = {
   Query,
+  Mutation,
 };
 
 const prisma = new PrismaClient();
